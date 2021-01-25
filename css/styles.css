@@ -1,12 +1,6 @@
 /* CSS Document */
- {
-  box-sizing: border-box;
-}
-
-body {
-  background-image:url(../img/fort.jpg)
+body {  
   padding: 10px;
-
 }
 /* hindi*/
 
@@ -17,7 +11,6 @@ body {
     
     background-color: tomato;
     overflow: hidden;
-   /* background-color: whitesmoke;*/
   }
     .topnav2 a {
     float: right;
@@ -38,8 +31,7 @@ body {
   /*start header  */
    .header {
       border-radius: 10px;
-      
-  padding:5px;
+      padding:5px;
     text-align: center;
     border: rgb(240, 240, 113);
     background: white;
@@ -59,12 +51,10 @@ body {
  /*start menu  */
   .topnav3 {
     border-radius: 100px;
-   
     background-color: tomato;
     color: white;
     font-family: 'kruti';
     font-size: 13.5px;
-  /* background-color: whitesmoke;*/
   }
    .dropbtn {
     background-color: tomato;
@@ -74,14 +64,11 @@ body {
     margin-left: 20px;
     border: none;
     border-radius: 5px;
-    font-style: bold;
+    font-weight: bold;
     font-family: 'kruti';
-   
-
-
   }
   .dropbtn:hover{
-    background-color: none;
+    background-color: transparent;
     color: black;
   }  
   .dropdown {
@@ -369,7 +356,7 @@ color:green;
   
   .col-25 {
     float: left;
-    width: 50%%;
+    width: 50%;
     margin-top: 30px;
   }
   
@@ -381,7 +368,7 @@ color:green;
   
   .col-26 {
     float: left;
-    width: 100%%;
+    width: 100%;
     margin-top: 30px;
     margin-right:70px;
   }
