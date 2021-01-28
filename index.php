@@ -1,3 +1,3 @@
 <?php
-readfile('index.html');
+readfile('index.html, registration.php, validation.php, home.php');
 ?>
