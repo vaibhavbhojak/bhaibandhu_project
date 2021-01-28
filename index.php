@@ -1,3 +1,6 @@
 <?php
-readfile('index.html, registration.php, validation.php, home.php');
+readfile('login.php');
+readfile('registration.php');
+readfile('validation.php');
+readfile('home.php');
 ?>
