@@ -4,18 +4,21 @@
 
 /* Style the body */
 body {
-  font-family: Arial;
+  
+  font-family: "kruti", Times, serif ;
   margin: 0;
+  padding: 0;
+}
+body button {
+	font-family: "kruti",  Times,  serif ;
+}
+body .footer {
+	font-family: Times serif ;
 }
 
 /* Header/logo Title */
 .header {
-  border-radius: 10px;
-  padding: 5px;
-  text-align: center;
-  border: rgb(240, 240, 113);
-  background: white;
-  color: red;
+  
 }
 .header img {
   max-width: 100%;
@@ -25,12 +28,39 @@ body {
 /* Style the top navigation bar */
 .navbar {
   display: flex;
-  background-color: tomato;
+  background-color: #fff20066;
   color: white;
-  font-family: "kruti";
   font-size: 13.5px;
+  border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+	margin-top: -4px;
+	padding-left: 38px;
 }
-
+.navbar .social-links {
+	color: red;
+    width: 46.9%;
+    text-align: right;
+}
+.navbar .social-links ul {
+    list-style: none;
+    width: auto;
+    display: inline-flex;
+	    margin: 10px;
+}
+.navbar .social-links ul li  {
+	margin-right: 10px;
+}
+.navbar .social-links ul li a{
+    padding: 0;
+    height: 22px;
+    display: block;
+}
+.navbar .social-links ul li a:hover {
+	background: transparent;
+}
+.navbar .social-links ul li a img{
+    height: 20px;
+}
 /* Style the navigation bar links */
 .navbar a {
   color: white;
@@ -68,26 +98,55 @@ body {
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #aaa;
+      background-color: #e2e1e187;
   width: 100%;
   padding: 20px;
+  padding-top: 3px;
+  height: 25px;
+  color: black;
+
+}
+.manoj 
+{
+  background-color: rgb(255, 186, 174);
+  width: 100%;
+  padding: 20px;
+  padding-top: 3px;
+  height: 25px;
+  color: black;
+  height:25px;
+  
+
+}
+.manoj a
+{
+  color: black;
+  
+  text-decoration: none;
+}
+
+.manoj a:hover 
+{    
+  color: white;
+  font-weight: bold;
+ cursor: pointer; 
 }
 
 /* Footer */
-/* Footer */
 .footer {
-  border-radius: 10px;
- 
-      padding: 13px;
+  padding: 10px;
+  background-color:white;
   text-align: center;
-  font-size: 15px;
-  background-color: black;
-  color: white;
+  font-size: 10px;
+  background-color: #f1f1f1;
   margin-top: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .footer a { 
-color: white;
+color: black;
+text-decoration: none;
 text-align: center;
 border: none;
 font-size: 15px;
@@ -95,15 +154,11 @@ font: bold;
 padding: 10px 10px;
 }
 
-.footer a:hover 
-{    
-  color: red;
+.footer a:hover{   
  cursor: pointer; 
+ color:red;
 }
-
-/*endddddddddddddddddddddddddddd*/
-
-/*top nav*/
+/*endddddddddddddddddddddddddddd*//*top nav*/
 .topnav2 {
   background-color: tomato;
   overflow: hidden;
@@ -121,28 +176,28 @@ padding: 10px 10px;
   background-color: #ddd;
   color: white;
 }
+
 /*end*/
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row,
-  .navbar, .footer {
+  .navbar, .footer, .main {
     flex-direction: column;
     text-align: center;
   }
 }
 /*menu*/
 .dropbtn {
-  background-color: tomato;
+  background-color: transparent;
   color: black;
   padding: 8px;
   font-size: 25px;
   margin-left: 20px;
   border: none;
-  border-radius: 5px;
-  font-family: "kruti";
+      cursor: pointer;
 }
 .dropbtn:hover {
-  background-color: transparent;
+  background-color: white;
   color: black;
 }
 .dropdown {
@@ -177,7 +232,14 @@ padding: 10px 10px;
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: whitesmoke;
+  background-color: white;
+}
+
+.link{
+	    background-color: white;
+	
 }
 
 /*end*/
+.container {
+ 
