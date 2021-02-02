@@ -10,10 +10,10 @@ body {
   padding: 0;
 }
 body button {
-	font-family: "kruti",  Times,  serif ;
+  font-family: "kruti",  Times,  serif ;
 }
 body .footer {
-	font-family: Times serif ;
+  font-family: Times serif ;
 }
 
 /* Header/logo Title */
@@ -33,11 +33,11 @@ body .footer {
   font-size: 13.5px;
   border-bottom: 1px solid grey;
     border-top: 1px solid grey;
-	margin-top: -4px;
-	padding-left: 38px;
+  margin-top: -4px;
+  padding-left: 38px;
 }
 .navbar .social-links {
-	color: red;
+  color: red;
     width: 35.9%;
     text-align: right;
 }
@@ -45,10 +45,10 @@ body .footer {
     list-style: none;
     width: auto;
     display: inline-flex;
-	    margin: 10px;
+      margin: 10px;
 }
 .navbar .social-links ul li  {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 .navbar .social-links ul li a{
     padding: 0;
@@ -56,7 +56,7 @@ body .footer {
     display: block;
 }
 .navbar .social-links ul li a:hover {
-	background: transparent;
+  background: transparent;
 }
 .navbar .social-links ul li a img{
     height: 20px;
@@ -79,6 +79,7 @@ body .footer {
 .row {
   display: flex;
   flex-wrap: wrap;
+  height: auto;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -87,6 +88,7 @@ body .footer {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
+  height: auto;
 }
 
 /* Main column */
@@ -102,7 +104,7 @@ body .footer {
   width: 100%;
   padding: 20px;
   padding-top: 3px;
-  height: 25px;
+  height: auto;
   color: black;
 
 }
@@ -135,10 +137,7 @@ body .footer {
 /* Footer */
 .footer {
   padding: 10px;
-  background-color:white;
-  text-align: center;
-  font-size: 10px;
-  background-color: #f1f1f1;
+   background-color: #fff20066;
   margin-top: 20px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
@@ -147,17 +146,17 @@ body .footer {
 .footer a { 
 color: black;
 text-decoration: none;
-text-align: center;
-border: none;
-font-size: 15px;
-font: bold;
-padding: 10px 10px;
 }
 
 .footer a:hover{   
  cursor: pointer; 
+ text-decoration: none;
  color:red;
 }
+
+
+
+
 /*endddddddddddddddddddddddddddd*//*top nav*/
 .topnav2 {
   background-color: tomato;
@@ -236,10 +235,88 @@ padding: 10px 10px;
 }
 
 .link{
-	    background-color: white;
-	
+      background-color: white;
+  
 }
 
+
 /*end*/
+
+/*form*/
+
+/*end*/
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}*/
+
+/*new form*/
+
 .container {
- 
+  border-radius: 5px;
+  color: white;
+  padding: 0px;
+  width: 25%;
+}
+
+.col-25 {
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  width: 25%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/*end*/
+
+/*footer2*/
+
+
