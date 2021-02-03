@@ -137,6 +137,7 @@ body .footer {
 /* Footer */
 .footer {
   padding: 10px;
+  display: inline-flex
   width: auto;
    background-color: #fff20066;
   margin-top: 20px;
@@ -181,7 +182,7 @@ text-decoration: none;
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row,
-  .navbar, .footer, .main, .div, .ul, .fakeing {
+  .navbar, .footer, .main, .div, .ul, .fakeing, .h5, .li {
     flex-direction: column;
     text-align: center;
   }
@@ -319,5 +320,29 @@ input[type=submit]:hover {
 /*end*/
 
 /*footer2*/
+.div{
 
+font-size: 18px;
+width: 100%;
+font-weight: bold;
+color: black;
+padding-left: 60px;
+width: 33%;
+padding-top: 10px;
+
+}
+
+.h5{
+
+  border-top: solid red 5px;
+  width:100px;
+}
+.ul{
+  font-size: 15px;
+}
+
+.li{
+padding-bottom: 12px;
+
+}
 
