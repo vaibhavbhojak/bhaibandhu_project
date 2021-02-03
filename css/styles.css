@@ -324,7 +324,7 @@ input[type=submit]:hover {
 
 font-size: 18px;
 width: 100%;
-font-weight: bold;
+/*font-weight: bold;*/
 color: black;
 padding-left: 60px;
 width: 33%;
