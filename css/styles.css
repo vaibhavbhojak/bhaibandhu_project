@@ -10,10 +10,18 @@ body {
   padding: 0;
 }
 body button {
-  font-family: "kruti",  Times,  serif ;
+  font-family: "kruti";
 }
 body .footer {
   font-family: Times serif ;
+}
+
+body .dropdown-content{
+  font-family: "kruti"
+}
+
+body .side{
+  font-family: "kruti";
 }
 
 /* Header/logo Title */
@@ -56,11 +64,12 @@ body .footer {
     display: block;
 }
 .navbar .social-links ul li a:hover {
-  background: transparent;
+  /*background: transparent;*/
 }
 .navbar .social-links ul li a img{
     height: 20px;
 }
+
 /* Style the navigation bar links */
 .navbar a {
   color: white;
@@ -85,9 +94,12 @@ body .footer {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding-left:  20px;
+  padding-right: 20px;
+  width: 30%;
+  display: block;
+  flex: 30%;
   height: auto;
 }
 
@@ -99,6 +111,18 @@ body .footer {
 }
 
 /* Fake image, just for this example */
+/*.fakeimg {
+      background-color: #e2e1e187;
+  width: 100%;
+  padding: 20px;
+  padding-top: 3px;
+  height: auto;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+}*/
+
 .fakeimg {
       background-color: #e2e1e187;
   width: 100%;
@@ -108,6 +132,8 @@ body .footer {
   color: black;
 
 }
+
+
 .manoj 
 {
   background-color: rgb(255, 186, 174);
@@ -136,25 +162,29 @@ body .footer {
 
 /* Footer */
 .footer {
-  padding: 10px;
-  display: inline-flex
-  width: auto;
-   background-color: #fff20066;
-  margin-top: 20px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
+      padding: 13px;
+      width: 100% ;
+    text-align: center;
+    font-size: 15px;
+    background-color: #fff20066;
+    color: white;
+    margin-top: 20px;
+  }
 
 .footer a { 
-color: black;
-text-decoration: none;
+  color: black;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  font: bold;
+  padding: 10px 10px;
 }
 
-.footer a:hover{   
- cursor: pointer; 
- text-decoration: none;
- color:red;
-}
+ .footer a:hover 
+{    
+    color: red;
+   cursor: pointer; 
+  }
 
 
 
@@ -182,7 +212,7 @@ text-decoration: none;
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row,
-  .navbar, .footer, .main, .div, .ul, .fakeing, .h5, .li {
+  .navbar, .footer, .main, .div, .ul, .fakeing, .h5, .li, .side {
     flex-direction: column;
     text-align: center;
   }
@@ -323,26 +353,34 @@ input[type=submit]:hover {
 .div{
 
 font-size: 18px;
+display: inline-flex;
 width: 100%;
 /*font-weight: bold;*/
-color: black;
+color: red;
 padding-left: 60px;
-width: 33%;
+width: auto;
 padding-top: 10px;
 
 }
 
-.h5{
 
-  border-top: solid red 5px;
-  width:100px;
-}
-.ul{
-  font-size: 15px;
+
+.zoom {
+  transition: transform .2s;
 }
 
-.li{
-padding-bottom: 12px;
-
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
+.zoom1 {
+  transition: transform .2s;
+}
+
+.zoom1:hover {
+  -ms-transform: scale(1.8); /* IE 9 */
+  -webkit-transform: scale(1.8); /* Safari 3-8 */
+  transform: scale(1.8); 
+}
