@@ -2,11 +2,13 @@
 <html lang="hi-IN" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  
   <meta charset="utf-8" />
   <title>Bhai Bandhu Patrika</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Roboto&display=swap" rel="stylesheet">
   <script src="js/jquery-3.2.1.slim.min.js"></script>
   
 <script>
@@ -32,7 +34,7 @@ var a = document.forms["vbForm"]["lastname"].value;
 </script>
 
   <style>
-    @font-face {
+   /* @font-face {
       font-family: 'Kruti';
       src: url('fonts/Kruti_Dev_010.eot');
       src: local('☺'), url('fonts/Kruti_Dev_010.woff') format('woff'),
@@ -40,7 +42,7 @@ var a = document.forms["vbForm"]["lastname"].value;
         url('fonts/Kruti_Dev_010.svg') format('svg');
       font-weight: normal;
       font-style: normal;
-    }    
+    }*/    
   </style>
 </head>
 
@@ -52,74 +54,79 @@ var a = document.forms["vbForm"]["lastname"].value;
   </div>
 
   <!-- Navigation Bar start -->
-<div class="navbar">
+<div class="navbar" style="font-family: kruti;">
 	<div class="main-nav">
 		  <div class="dropdown">
-		     <button class="dropbtn">eq[;</button>
+		     <button class="dropbtn">
+		    मुख्य
+		 </button>
 		     <div class="dropdown-content">
 		      </div>
 		  </div>
+        </div>
 		    <div class="dropdown">
-		      <button class="dropbtn">lekpkj</button>
-		        <div class="dropdown-content">
-			     <a href="2.html">c/kkbZ lans'k</a>
-			     <a href="#">'kksd lans'k</a>
-			     <a href="#">vU;</a>
-		       </div>
-		    </div>
-		    <div class="dropdown">
-		        <button class="dropbtn">lekt</button>
-		        <div class="dropdown-content">
-			     <a href="#">lnL; iathdj.k</a>
-			     <a href="#">ifjp;</a>
-			     <a href="#">xks=</a>
-			     <a href="#">bfrgkl</a>
-		        </div>
-		    </div>
+          <button class="dropbtn"> समाचार दर्पण</button>
+            <div class="dropdown-content">
+           <a href="goodnews.html">बधाई संदेश</a>
+           <a href="sadnews.html">शोक संदेश</a>
+           <a href="other.html">अन्य</a>
+           </div>
+        </div>
+		     <div class="dropdown">
+            <button class="dropbtn">समाज</button>
+            <div class="dropdown-content">
+           <a href="regis.html">सदस्य पंजीकरण</a>
+           <a href="intro.html">परिचय</a>
+           <a href="gotra.html">गोत्र</a>
+           <a href="history.html">इतिहास</a>
+            </div>
+        </div>
 		        <div class="dropdown">
-		             <button class="dropbtn">oSokfgdh</button>
-		          <div class="dropdown-content">
-			         <a href="pub.php">ifjp;</a>
-			         <a href="downloads.php">QkeZ</a>
-		         </div>
-		      </div>
+                 <button class="dropbtn"> वैवाहिकी</button>
+              <div class="dropdown-content">
+               <a href="intro2.html">परिचय</a>
+               <a href="fourm.html">फार्म</a>
+             </div>
+          </div>
 		           <div class="dropdown">
-		               <button class="dropbtn">/keZ</button>
-		              <div class="dropdown-content">
-			            <a href="suryadev.php">ys[k</a>
-			            <a href="suryayantra.php">dfork</a>
-          		     </div>
-		          </div>
-		      <div class="dropdown">
-                <button class="dropbtn">iapkx</button>
-		       <div class="dropdown-content">
-			       <a href="suryayantra.php">jkf'kQy</a>
-		       </div>
-		     </div>
+                   <button class="dropbtn">धर्म</button>
+                  <div class="dropdown-content">
+                  <a href="litra.html">लेख</a>
+                  <a href="poem.html">कविता</a>
+                   </div>
+              </div>
+		        <div class="dropdown">
+                <button class="dropbtn">पंचाग</button>
+           <div class="dropdown-content">
+             <a href="rashi.html">राशिफल</a>
+           </div>
+         </div>
 
-  		            <div class="dropdown">
-		               <button class="dropbtn">lw;Z Hkxoku</button>
-		              <div class="dropdown-content">
-			           <a href="suryayantra.php">lw;Z nso</a>
-			           <a href="suryayantra.php">lw;Z ;a=</a>
-			           <a href="suryayantra.php">lw;Z iwtk</a>
-			           <a href="suryayantra.php">lw;Z pkyhlk</a>
-			           <a href="suryayantra.php">lw;Z dop</a>
-			           <a href="suryayantra.php">lw;Z vkjrh</a>
-			           <a href="suryayantra.php">lw;Z Lrqfr</a>
-			           <a href="suryayantra.php">lw;Z çkFkZuk</a>
-			           <a href="suryayantra.php">lw;Z ueLdkj</a>
-		             </div>
-		           </div>
+  		             <div class="dropdown">
+                   <button class="dropbtn">सूर्य भगवान</button>
+                  <div class="dropdown-content">
+                 <a href="suryayantra.html">सूर्य देव</a>
+                 <a href="suryayantra1.html">सूर्य यंत्र</a>
+                 <a href="suryayantra2.html">सूर्य पूजा</a>
+                 <a href="suryayantra3.html">सूर्य चालीसा</a>
+                 <a href="suryayantra4.html">सूर्य कवच</a>
+                 <a href="suryayantra5.html">सूर्य आरतीh</a>
+                 <a href="suryayantra6.html">सूर्य स्तुति</a>
+                 <a href="suryayantra7.html">सूर्य प्रार्थना</a>
+                 <a href="suryayantra8.html">सूर्य नमस्कार</a>
+                 </div>
+               </div>
 
-		      <div class="dropdown">
-		        <button class="dropbtn">laidZ</button>
-		       <div class="dropdown-content">
-			    <a href="suryayantra.php">gesa tku</a>
-			    <a href="suryayantra.php">laidZ lw=</a>
-			    <a href="suryayantra.php">QhMcSd</a>
-		       </div>
-		     </div>
+ <div class="dropdown">
+            <button class="dropbtn">संपर्क करें</button>
+           <div class="dropdown-content">
+          <a href="aboutus.html">हमें जानें</a>
+          <a href="contactus.html">संपर्क सूत्र</a>
+          <a href="feedback.html">प्रतिपुष्टि(फीडबैक)</a>
+           </div>
+         </div>
+
+		     
 	</div>
 	<!--<div class="social-links">
 		<ul>
@@ -175,22 +182,22 @@ var a = document.forms["vbForm"]["lastname"].value;
                     <h2 style="font-family: times-serif;"><b>Follow us</b></h2>
         <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white; ">
              <div class="social-links" style="display: inline-flex; font-family: serif; padding-left: 40px;" >
-		          <a href="#">
+		          <a href="https://wa.me/+919461401370">
 		       <div class="zoom1">
 		          <img src="img/whatsapp_24.ico"/ style="padding-right: 20px;">
 		      </div>
 		         </a>
-		        <a href="#">
+		        <a href="YouTube.html">
  		       <div class="zoom1">
      		      <img src="img/youtube_24.ico"/style="padding-right: 20px;">
 		       </div>
 		          </a>
-		          <a href="#">
+		          <a href="mail.html">
 		             <div class="zoom1">
 			          <img src="img/mail_24.ico"/style="padding-right: 20px;">
 		             </div>
 		          </a>
-		           <a href="#">
+		           <a href="twitter.html">
 		              <div class="zoom1">
 		                 <img src="img/twitter_24.ico"/style="padding-right: 20px;">
     	               </div>
@@ -203,9 +210,9 @@ var a = document.forms["vbForm"]["lastname"].value;
 	       </div>
        </div>
               <br>
-              <h2 style="font-size: 35px;"><b>lkekftd lekpkj</b></h2>
+              <h2 style="font-size: 35px;"><b></b></h2>
        <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white;">
-        <a>
+        <a href="samaachar.html" style="text-decoration: none; color: black;">
         <ul>
         <li>lw;Z iwtk ifj"kn dk;Zdkj.kh dh cSBd</li>
 
@@ -213,25 +220,29 @@ var a = document.forms["vbForm"]["lastname"].value;
         
         <li>laKk lfefr x;k/kke ftyk 'kk[kk tgkukckn dh cSBd laiUu</li>
         
-        <li>HkkLdj lfefr dh vke cSBd lEiUu</li></ul>
+        <li>HkkLdj lfefr dh vke cSBd lEiUu</li>
+ 
+    </ul>
+
       </a>
       </div>
     <br>
-         <h2> <b>HkkbZ&ca/kq fo'ks"k</b></h2>
+         <h2> <b>भाई-बंधु विशेष</b></h2>
          <div class="fakeimg" style="height:auto; font-size: 12px; background-color: white; padding-left: 50px;">
 
-       
+     
                <div style="display: inline-flex; ">
                	<div>
                		
                	</div>
+               	  <div class="zoom">
                   	<img src="img/img3.jpeg" style="height:80px; width: 80px; border-radius: 20px;">
-               
+               </div>
            
 
                <div>
-                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">Qsl vQ  eUFk</h2>
-                     <a href="#" style="font-family: times-serif; padding-left: 50px;">..more</a>
+                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">फेस ऑफ़ द मंथ</h2>
+                     <a href="face of month.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
                </div>
     </div>
 
@@ -245,13 +256,14 @@ var a = document.forms["vbForm"]["lastname"].value;
                	<div>
                		
                	</div>
+               	<div class="zoom">
                   	<img src="img/con1.png" style="height:80px; width: 80px; border-radius: 20px;">
-               
+               </div>
            
 
                <div>
-                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">c/kkbZ lans'k</h2>
-                     <a href="#" style="font-family: times-serif; padding-left: 50px;">..more</a>
+                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">बधाई संदेश</h2>
+                     <a href="goodnews.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
                </div>
     </div>
     <br>
@@ -263,13 +275,14 @@ var a = document.forms["vbForm"]["lastname"].value;
                	<div>
                		
                	</div>
+               	<div class="zoom">
                   	<img src="img/lekh1.png" style="height:80px; width: 80px; border-radius: 20px;">
-               
+               </div>
            
 
                <div>
-                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">ys[k</h2>
-                     <a href="#" style="font-family: times-serif; padding-left: 50px;">..more</a>
+                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">लेख</h2>
+                     <a href="litra.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
                </div>
     </div>
     <br>
@@ -281,13 +294,14 @@ var a = document.forms["vbForm"]["lastname"].value;
                	<div>
                		
                	</div>
+               	<div class="zoom">
                   	<img src="img/ka.png" style="height:80px; width: 80px; border-radius: 20px;">
-               
+               </div>
            
 
                <div>
-                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">dfork</h2>
-                     <a href="#" style="font-family: times-serif; padding-left: 50px;">..more</a>
+                     <h2 style="font-family: kruti; font-size: 25px;  padding-left: 25px;">कविता</h2>
+                     <a href="poem.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
                </div>
     </div>
 
@@ -295,19 +309,22 @@ var a = document.forms["vbForm"]["lastname"].value;
 
        </div>
       <br>
-          <h1><b>HkkbZ&ca/kq lEiknd dk;Zdkfj.kh</b></h1>
+          <h1><b>भाई-बंधु संपादक</b></h1>
  <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white;font-family:'Times New Roman,Times,serif';" >
-
+<a href="karyakarni.html">
  <marquee height="180" behavior="scroll" direction="up" id="news"
               onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
               onClick="location.href='socialnews.php'" loop="-1" scrollamount="3">
               <div style="display: inline-flex;">
+              	<div class="zoom">
               <img src="img/male.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
+          </div>
 
               <div style="font-family: kruti;">
-              	<b>uke</b>
+              	<b>
+नाम</b>
               	<br>
-              	<b>in</b>
+              	<b> पद</b>
 
               </div>
 
@@ -317,9 +334,10 @@ var a = document.forms["vbForm"]["lastname"].value;
               <img src="img/male.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
 
               <div style="font-family: kruti;">
-              	<b>uke</b>
+              	<b>
+नाम</b>
               	<br>
-              	<b>in</b>
+              	<b> पद</b>
 
               </div>
 
@@ -330,9 +348,10 @@ var a = document.forms["vbForm"]["lastname"].value;
               <img src="img/male.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
 
               <div style="font-family: kruti;">
-              	<b>uke</b>
+              	<b>
+नाम</b>
               	<br>
-              	<b>in</b>
+              	<b> पद</b>
 
               </div>
 
@@ -342,9 +361,10 @@ var a = document.forms["vbForm"]["lastname"].value;
               <img src="img/male.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
 
               <div style="font-family: kruti;">
-              	<b>uke</b>
+              	<b>
+नाम</b>
               	<br>
-              	<b>in</b>
+              	<b> पद</b>
 
               </div>
 
@@ -354,9 +374,10 @@ var a = document.forms["vbForm"]["lastname"].value;
               <img src="img/male.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
 
               <div style="font-family: kruti;">
-              	<b>uke</b>
+              	<b>
+नाम</b>
               	<br>
-              	<b>in</b>
+              	<b> पद</b>
 
               </div>
 
@@ -364,7 +385,7 @@ var a = document.forms["vbForm"]["lastname"].value;
               <br>
             </marquee>
 
-
+</a>
  </div>
  <!-- <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white;font-family:'Times New Roman,Times,serif';" >
       <ul>
@@ -388,14 +409,14 @@ var a = document.forms["vbForm"]["lastname"].value;
         <li>4</li>
       </ul>
       </div><br>-->
-      <h5 style="font-size: 25px;"><b>lEidZ djsa</b></h5> 
+      <h5 style="font-size: 25px;"><b>संपर्क करें</b></h5> 
      <div class="fakeimg" style="height:auto; font-size: 20px;font-family:'Times New Roman,Times,serif'; background-color: white;">
          <div class="social-links" style="display: inline-flex; font-family: serif; padding-left: 40px; padding-bottom: 0px;" >
                             
                             <ul>
                               <div style="display: inline-flex;">
 			                     <li>
-				                    <a href="#">
+				                    <a href="location">
 		                             <div class="zoom1">
 		                               <img src="img/loca.ico"/ style="padding-left:  0px; padding-right: 10px;">
 	                                 </div>
@@ -408,7 +429,7 @@ var a = document.forms["vbForm"]["lastname"].value;
                               <br>
                                       <div style="display: inline-flex;">                            
 	                                     <li>
-	                                       <a href="#">
+	                                       <a href="phone">
 	                                         <div class="zoom1">
 	                                            <img src="img/phone.ico"/style="padding-right: 10px;">
 	                                         </div>
@@ -422,7 +443,7 @@ var a = document.forms["vbForm"]["lastname"].value;
                                      <br>
                                            <div style="display: inline-flex;">
                                               <li>
-	                                             <a href="#">
+	                                             <a href="whatsapp">
                                                    <div class="zoom1">
                                                        <img src="img/whatsapp_24.ico"/style="padding-right: 10px;">
                                                    </div>
@@ -439,7 +460,7 @@ var a = document.forms["vbForm"]["lastname"].value;
    </div>
   
  <div class="main">
-                   <h2 style="font-family: kruti;"><b>HkkbZ&ca/kq lEiknd</b></h2>
+                   <h2 style="font-family: kruti;"><b>भाई-बंधु पत्रिका</b></h2>
                    <h5>Published on Dec 7, 2017</h5>
               <div class="fakeimg" style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; font-family: kruti;">
 		                 <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
@@ -448,7 +469,12 @@ var a = document.forms["vbForm"]["lastname"].value;
 			                  </div>
 			                        <div>
 		              	    	Test content asdfasdf asdkfjalskdf lkasdfjlaksdf laksjdfl asdkf lasjdflasdlfj lkasdjfl asdlkf....
+		              	    	 <a href="bbeditor.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
 			                        </div>
+
+                     
+                    
+
 		                 </div>
 		                       <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
 			                           <div style="text-align: center;">
@@ -456,6 +482,7 @@ var a = document.forms["vbForm"]["lastname"].value;
 			                           </div>
 			                       <div>
 				                       Test content asdfasdf asdkfjalskdf lkasdfjlaksdf laksjdfl asdkf lasjdflasdlfj lkasdjfl asdlkf....
+				                       <a href="bbeditor.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
 			                       </div>
 		                       </div>
 		                                        <div style="width: 33%;margin-right: 10px;">
@@ -464,6 +491,7 @@ var a = document.forms["vbForm"]["lastname"].value;
 			                                        </div>
 			                                          <div>
 				                                         Test content asdfasdf asdkfjalskdf lkasdfjlaksdf laksjdfl asdkf lasjdflasdlfj lkasdjfl asdlkf....
+				                                         <a href="bbeditor.html" style="font-family: times-serif; padding-left: 50px;">..more</a>
 			                                           </div>
 		                                       </div>
 	          </div>
@@ -474,10 +502,12 @@ var a = document.forms["vbForm"]["lastname"].value;
     
       <div class="fakeimg" style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; font-family: kruti;">
 		<div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-			<h2><b>HkkbZ&ca/kq if=dk</b></h2>
+			<h2><b>भाई-बंधु पत्रिका</b></h2>
 			<div style="text-align: center;">
 				<div class="zoom">
+					<a href="bbpatrika.html">
 				<img src="img/bookcover.jpg" style="border-radius: 12px; width: 75%;">
+			</a>
 			</div>
 			</div><br>
 			<div>
@@ -485,10 +515,12 @@ var a = document.forms["vbForm"]["lastname"].value;
 			</div>
 		</div>
 		<div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-			<h2><b>;ksxklu</b></h2>
+			<h2><b>योगासन</b></h2>
 			<div style="text-align: center;">
 				<div class="zoom">
+					<a href="yogasan.html">
 				<img src="img/y1.jpg" style="border-radius: 12px; width: 75%;">
+			</a>
 			</div>
 			</div>
 			<br>
@@ -497,9 +529,11 @@ var a = document.forms["vbForm"]["lastname"].value;
 			</div>
 		</div>
 		<div style="width: 33%;margin-right: 10px;">
-			<h2><b>jkf'kQy</b></h2>
+			<h2><b>राशिफल</b></h2>
 			<div style="text-align: center;"><div class="zoom">
+				<a href="rashi.html">
 				<img src="img/r1.jpg" style="border-radius: 12px;width: 75%;">
+			</a>
 			</div>
 			</div><br>
 			<div>
@@ -513,10 +547,12 @@ var a = document.forms["vbForm"]["lastname"].value;
 
        <div class="fakeimg" style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; font-family: kruti;">
 		<div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-			<h2><b>lknj J)katyh</b></h2>
+			<h2><b>श्रद्धांजलि</b></h2>
 			<div style="text-align: center;">
 				<div class="zoom">
+					<a href="sadnews.html" >
 				<img src="img/shra.jpg" style="border-radius: 12px; width: 75%;">
+			</a>
 			</div>
 			</div><br>
 			<div>
@@ -524,10 +560,12 @@ var a = document.forms["vbForm"]["lastname"].value;
 			</div>
 		</div>
 		<div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-			<h2><b>oSokfgdh</b></h2>
+			<h2><b>वैवाहिक</b></h2>
 			<div style="text-align: center;">
 				<div class="zoom">
+					<a href="marige.html">
 				<img src="img/mra2.png" style="border-radius: 12px; width: 75%;">
+			</a>
 			</div>
 			</div>
 			<br>
@@ -536,10 +574,12 @@ var a = document.forms["vbForm"]["lastname"].value;
 			</div>
 		</div>
 		<div style="width: 33%;margin-right: 10px;">
-			<h2><b>uUgh nqfu;k</b></h2>
+			<h2><b>नन्ही दुनिया</b></h2>
 			<div style="text-align: center;">
 				<div class="zoom">
+					<a href="nanhi duniya.html">
 				<img src="img/p1.jpg" style="border-radius: 12px;width: 75%;">
+			</a>
 			</div>
 			</div><br>
 			<div>
@@ -550,7 +590,8 @@ var a = document.forms["vbForm"]["lastname"].value;
 	  <br>
 	   <div class="fakeimg" style="height: auto; padding: 10px;background-color:#f5f4f4; font-family: kruti;">
 
-<h2><b>'kkd}hih; lekt ds oj</b></h2>
+<h2><b>भाई-बंधु पत्रिका वर</b></h2>
+<a href="metromon.html">
             <marquee height="80" behavior="scroll" direction="left" id="news"
               onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
               onClick="location.href='socialnews.php'" loop="-1" scrollamount="5">
@@ -562,8 +603,10 @@ var a = document.forms["vbForm"]["lastname"].value;
               
               
             </marquee>
+        </a>
             <hr style="width:100%;text-align:left;margin-left:0">
-            <h2><b>'kkd}hih; lekt ds o/kw</b></h2>
+            <h2><b>भाई-बंधु पत्रिका वधू</b></h2>
+            <a href="metromon.html">
             <marquee height="80" behavior="scroll" direction="right" id="news"
               onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
               onClick="location.href='socialnews.php'" loop="-1" scrollamount="5">
@@ -574,7 +617,7 @@ var a = document.forms["vbForm"]["lastname"].value;
                <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
               
             </marquee>
-
+</a>
 	   </div>
 
      
@@ -586,14 +629,14 @@ var a = document.forms["vbForm"]["lastname"].value;
  <div class="footer">
  	
  
-    <a href="#">Home</a>
- 	<a href="#">FaceBook</a>
-        <a href="#">Teitter</a>
-         <a href="#">YouTube</a>
-             <a href="#">SiteMap</a>
-         <a href="#">Bloger</a>
-           <a href="#">whatsapp</a>
-           <a href="#">About us</a><br>
+    <a href="index.html">Home</a>
+ 	<a href="https://www.facebook.com/Bhai-Bandhu-Patrika-150293535826784">FaceBook</a>
+        <a href="twitter.html">Teitter</a>
+         <a href="YouTube.html">YouTube</a>
+             <a href="SiteMap.html">SiteMap</a>
+         <a href="Bloger.html">Bloger</a>
+           <a href="https://wa.me/+919461401370">whatsapp</a>
+           <a href="aboutus.html">About us</a><br>
 	<a href="#" style="float:right">Top</a>
     <b style="color: black;">Terms and Condition<br>
       Privacy & Policy @copyright issued 2021 Designed by Vaibhav Bhojak.</b>
