@@ -8,6 +8,7 @@ body {
   font-family: 'Laila', serif;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 body button {
   font-family: 'Laila', serif;
@@ -26,6 +27,7 @@ body .side{
 
 /* Header/logo Title */
 .header {
+
   
 }
 .header img {
@@ -128,9 +130,10 @@ body .side{
 .fakeimg {
       background-color: #e2e1e187;
   width: 100%;
-  padding: 20px;
+  /* padding: 0; */
   padding-top: 3px;
   height: auto;
+  margin-top: -24px;
   color: black;
 
 }
@@ -214,7 +217,7 @@ body .side{
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row,
-  .navbar, .footer, .main, .div, .ul, .fakeing, .h5, .li, .side {
+  .navbar, .footer, .main, .div, .ul, .fakeing, .h5, .li, .side, .img, .social-links, .zoom, .zoom1 {
     flex-direction: column;
     text-align: center;
   }
@@ -224,8 +227,8 @@ body .side{
   background-color: transparent;
   color: black;
   padding: 8px;
-  font-weight: bold;
-  font-size: 25px;
+ font-weight: bold; 
+  font-size: 16px;
   margin-left: 20px;
   border: none;
       cursor: pointer;
@@ -238,20 +241,20 @@ body .side{
   position: relative;
   display: inline-block;
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
-  font-size: 25px;
-  color: red;
+  font-size: 14px;
+  color: orange;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content a {
-  color: red;
+  color: orange;
   padding: 2px 6px;
   text-decoration: none;
   display: block;
@@ -344,7 +347,7 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75, input[type=submit], .zoom, .zoom1 {
     width: 100%;
     margin-top: 0;
   }
@@ -441,8 +444,12 @@ label {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-251, .col-752, input[type=submit], input[type=reset] {
+  .col-251, .col-752, input[type=submit], input[type=reset], .zoom, .zoom1 {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.whole{
+  font-size: 18px;
 }
