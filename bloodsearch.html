@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/styles1.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Roboto&display=swap" rel="stylesheet">
-  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -121,8 +121,8 @@
         </div>
       </div>
       <br>
-      <h2 style="font-size: 35px;"><b></b></h2>
-      <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white;">
+      <!-- <h2 style="font-size: 35px;"><b></b></h2> -->
+      <!-- <div class="fakeimg" style="height:auto; font-size: 20px; background-color: white;">
         <a href="samaachar.html" style="text-decoration: none; color: black;">
           <ul>
             <p style="font-size: 25px;
@@ -144,9 +144,8 @@
           </ul>
 
         </a>
-      </div>
+      </div> -->
 
-      
       <!-- ------------------------start----------------------- -->
       <h2> <b>भाई-बंधु विशेष</b></h2>
       <div class="fakeimg"
@@ -293,90 +292,6 @@
       </div>
     <!-- ------------------------------------end-------------------------------------------- -->
 
-      <!-- <h2><b>भाई-बंधु संपादक</b></h2>
-      <div class="fakeimg"
-        style="height:auto; font-size: 20px; background-color: white;font-family:'Times New Roman,Times,serif';">
-        <a href="karyakarni.html">
-          <marquee height="180" behavior="scroll" direction="up" id="news"
-            onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
-            onClick="location.href='socialnews.php'" loop="-1" scrollamount="3">
-            <div style="display: inline-flex;">
-              <div class="zoom">
-                <img src="img/male.png"
-                  style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
-              </div>
-
-              <div style="">
-                <b>
-                  नाम</b>
-                <br>
-                <b> पद</b>
-
-              </div>
-
-            </div>
-            <br>
-            <div style="display: inline-flex;">
-              <img src="img/male.png"
-                style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
-
-              <div style="">
-                <b>
-                  नाम</b>
-                <br>
-                <b> पद</b>
-
-              </div>
-
-            </div>
-            <br>
-            <br>
-            <div style="display: inline-flex;">
-              <img src="img/male.png"
-                style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
-
-              <div style="">
-                <b>
-                  नाम</b>
-                <br>
-                <b> पद</b>
-
-              </div>
-
-            </div>
-            <br>
-            <div style="display: inline-flex;">
-              <img src="img/male.png"
-                style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
-
-              <div style="">
-                <b>
-                  नाम</b>
-                <br>
-                <b> पद</b>
-
-              </div>
-
-            </div>
-            <br>
-            <div style="display: inline-flex;">
-              <img src="img/male.png"
-                style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px; margin-bottom: 50px;">
-
-              <div style="">
-                <b>
-                  नाम</b>
-                <br>
-                <b> पद</b>
-
-              </div>
-
-            </div>
-            <br>
-          </marquee>
-
-        </a>
-      </div> -->
 
       <h2><b>संपर्क करें</b></h2>
       <div class="fakeimg"
@@ -440,185 +355,169 @@
           </ul>
         </div>
       </div>
+      <!-- <h2><b>Serch Donor</b></h2>
+      <div class="fakeimg"
+      style="height:auto; font-size: 16px;font-family:'Times New Roman,Times,serif'; background-color: white;">
+      <div class="social-links"
+        style="display: inline-flex; font-family: serif; padding-left:-8px; padding-bottom: 0px;">
+        <TABLE height="227" cellSpacing="1" cellPadding="5" width="100%" >
+            <TR> 
+            <TD width="5%" height=26></TD>
+            <TD width="31%" height=26><FONT size=2>Blood Group</FONT></TD>
+            <TD width="2%" height=26><FONT size=2>:</FONT></TD>
+            <TD width="62%" height=26> 
+              <FONT color=#ffffff size=1>
+                  <STRONG>
+                    <SELECT size="1" name="blood" id="Serchgroup">
+              <OPTION value=B+ selected>B+</OPTION> 
+              <OPTION value=A+>A+</OPTION>
+                <OPTION value=A->A-</OPTION>
+                <OPTION value=B->B-</OPTION>
+                <OPTION value=AB->AB-</OPTION>
+                <OPTION value=AB+>AB+</OPTION>
+                <OPTION value=O+>O+</OPTION>
+                <OPTION value=O->O-</OPTION>
+              </SELECT>
+              </STRONG></FONT></TD>
+          </TR>
+        
+          <TR> 
+            <TD width="5%" height=25></TD>
+            <TD width="2%" height=25></TD>
+            <TD colSpan=3 height=30>
+              <div align="center"> 
+                <STRONG>
+                  <button type="button" onclick="searchMember()">
+                    <b>Serch
+                    </b>
+                  </button>
+                <button name="reset" type="reset" value="Reset"><b>Reset</b>
+                 </button>
+               
+               
+               
+               
+               
+                </STRONG>
+                <table id="result_table" border="1" width="100%"background-color="#f5f4f4" >
+                  <tr>
+                    <th>Group</th>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>mobile</th>
+                    <th>City</th>
+                  </tr>
+                  <tbody>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </TD>
+          </TR>
+
+
+      
+             
+        
+               
+              </TABLE>
+
+      </div>
+      </div> -->
     </div>
 
     <div class="main">
-      <!-- <h2><b>भाई-बंधु पत्रिका</b></h2>
-      <h5>Published on Dec 7, 2017</h5> -->
-      <div class="fakeimg"
-        style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; margin-top: 10px;">
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-          <div style="text-align: center;">
-            <img src="img/TRAST/gopal.jpg" style="border-radius: 100%;width: 42%;">
-          </div>
-          <div style="text-align: center;">
-            स्वर्गीय श्री गोपाल दास शर्मा
+     <h2><b>भाई-बंधु रक्तदान</b></h2>
+      <!-- Page Contenttttt -->
+      <div class="fakeimg page-main-content"
+        style="height: auto;padding: 10px;background-color:#f5f4f4; margin-top: 10px;">
+
+      <TABLE height="227" cellSpacing="1" cellPadding="5" width="100%" >
+        <TR> 
+        <TD width="5%" height=26></TD>
+        <TD width="8%" height=26><FONT size=2 color="red"><b>Blood Group</b></FONT></TD>
+        <TD width="2%" height=26><FONT size=2>:</FONT></TD>
+        <TD width="62%" height=26> 
+          <FONT color=#ffffff size=1>
+              <STRONG>
+                <SELECT size="1" name="blood" id="Serchgroup">
+          <OPTION value=B+ selected>B+</OPTION> 
+          <OPTION value=A+>A+</OPTION>
+            <OPTION value=A->A-</OPTION>
+            <OPTION value=B->B-</OPTION>
+            <OPTION value=AB->AB-</OPTION>
+            <OPTION value=AB+>AB+</OPTION>
+            <OPTION value=O+>O+</OPTION>
+            <OPTION value=O->O-</OPTION>
+          </SELECT>
+          </STRONG></FONT></TD>
+      </TR>
+    
+      <TR> 
+        <TD width="5%" height=25></TD>
+        <TD width="2%" height=25></TD>
+        <TD colSpan=3 height=30> 
+          <div align="center"> 
+            <STRONG>
+              <button type="button" onclick="searchMember()">
+                <b>Serch
+                </b>
+              </button>
+            <button name="reset" type="reset" value="Reset"><b>Reset</b>
+             </button>
+           
+           
+           
+           
+           
+            </STRONG>
+            <br>
+            <br>
+
+            <table id="result_table" border="1" width="100%"background-color="#f5f4f4" >
+              <tr>
+                <td>Group</td>
+                </tr>
+                <tr>
+                <td>Id</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                </tr>
+                <tr>
+                <td>mobile</td>
+                </tr>
+                <tr>
+                <td>City</td>
+
+              </tr>
+              <tbody>
+
+              </tbody>
+            </table>
 
           </div>
-          <!-- <a href="Editor.html"
-            style="font-family: times-serif; font-size: 13px; padding-left: 20px;  text-decoration: none;">..आगे पढ़े</a> -->
+        </TD>
+      </TR>
+
+
+  
+         
+    
+           
+          </TABLE>
+       
+                        
 
 
 
-
-        </div>
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-          <div style="text-align: center;">
-            <img src="img/TRAST/hanuman ji.jpg" style="border-radius: 100%;width: 42%;">
-          </div>
-          <div style="text-align: center;">
-            स्वर्गीय श्री हनुमान दास भोजक
-            <!-- <a href="Editor.html"
-              style="font-family: times-serif; font-size: 13px; padding-left: 20px;  text-decoration: none;">..आगे
-              पढ़े</a> -->
-          </div>
-        </div>
-        <div style="width: 33%;margin-right: 10px;">
-          <div style="text-align: center;">
-            <img src="img/TRAST/mahendar.jpg" style="border-radius: 100%;width: 42%;">
-          </div>
-          <div style="text-align: center;">
-            श्री महेन्द्र शर्मा
-            <!-- <p>
-         <a href="Editor.html"
-              style="font-family: times-serif; margin-top: 20%; font-size: 13px; padding-left: 15px;  text-decoration: none;">
-              आगे पढ़े</a>
-      </p> -->
-          </div>
-        </div>
-        
-        
-      </div>
       
-      <br>
-
-      <div class="fakeimg"
-        style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; margin-top: -22px;">
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-          <h2><b>भाई-बंधु पत्रिका</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="bbpatrika.html">
-                <img src="img/bookcover.jpg" style="border-radius: 12px; width: 75%;">
-              </a>
-            </div>
-          </div><br>
-          <div>खबर आपकी, रंग हमारे...
-            शाकद्वीपीय मग ब्राह्मण समाज की सामाजिक पत्रिका-वेब पॉर्टल
-          </div>
-        </div>
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px; margin-top: 10px;">
-          <h2><b>योगासन</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="yogasan.html">
-                <img src="img/y1.jpg" style="border-radius: 12px; width: 75%;">
-              </a>
-            </div>
-          </div>
-          <br>
-          <div>
-            एक आध्यात्मिक प्रक्रिया है जिसमें शरीर, मन और आत्मा को एक साथ लाने (योग) का काम होता है।
-          </div>
-        </div>
-        <div style="width: 33%;margin-right: 10px;">
-          <h2><b>राशिफल</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="rashi.html">
-                <img src="img/r1.jpg" style="border-radius: 12px;width: 75%;">
-              </a>
-            </div>
-          </div><br>
-          <div>
-            मिथुन व्यापार लाभ, कन्या-सम्बन्ध मधुर, वृश्चिक-बुद्धिमान लोगों से लाभ और देखें पञ्चाङ्ग
-          </div>
-        </div>
       </div>
-      <p></p>
-      <p>
-      </p>
+     
 
-      <div class="fakeimg"
-        style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4;   margin-top: 10px;">
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-          <h2><b>श्रद्धांजलि</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="sadnews.html">
-                <img src="img/shra.jpg" style="border-radius: 12px; width: 75%;">
-              </a>
-            </div>
-          </div><br>
-          <div>
-            दुःख कितना भी बड़ा क्यों ना हो धैर्य और संतुलन रखिये समय आपको हारने नहीं देगा
-          </div>
-        </div>
-        <div style="width: 33%;border-right: 1px solid gray;margin-right: 10px;">
-          <h2><b>वैवाहिक</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="marige.html">
-                <img src="img/mra2.png" style="border-radius: 12px; width: 75%;">
-              </a>
-            </div>
-          </div>
-          <br>
-          <div>
-            शाकद्वीपीय समाज की 'भाई बन्धु पत्रिका' द्वारा वर-वधू परिचय-पत्र है। जिसमें आप अपना नि:शुल्क परिचय दे सकते
-            है।
-          </div>
-        </div>
-        <div style="width: 33%;margin-right: 10px;">
-          <h2><b>नन्ही दुनिया</b></h2>
-          <div style="text-align: center;">
-            <div class="zoom">
-              <a href="nanhi duniya.html">
-                <img src="img/p1.jpg" style="border-radius: 12px;width: 75%;">
-              </a>
-            </div>
-          </div><br>
-          <div>
-            एकदंत कैसे कहलाए गणेशजी, पढ़ें रोचक कथा |
-          </div>
-        </div>
-      </div>
-      <br>
-       <div class="fakeimg" style="height: auto; padding: 10px;background-color:#f5f4f4; ">
-
-<h2><b>भाई-बंधु पत्रिका फोटो गैलरी</b></h2>
-<a href="metromon.html">
-            <marquee height="20%" behavior="scroll" direction="left" id="news"
-              onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
-              onClick="location.href='socialnews.php'" loop="-1" scrollamount="5">
-              <img src="photog/1.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/2.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/3.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/4.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/5.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/6.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/7.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              <img src="photog/8.jpg" style="border-radius: 0%; padding: 2px; margin-right: 20px; width: 195px; height: 98px;">
-              
-              
-            </marquee>
-        </a>
-           <!-- <hr style="width:100%;text-align:left;margin-left:0">
-            <h2><b>भाई-बंधु पत्रिका वधू</b></h2>
-            <a href="metromon.html">
-            <marquee height="80" behavior="scroll" direction="right" id="news"
-              onmouseover="style.cursor='pointer';this.stop();" onMouseOut="this.start();"
-              onClick="location.href='socialnews.php'" loop="-1" scrollamount="5">
-            <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
-               <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
-               <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
-               <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
-               <img src="img/female.png" style="border-radius: 0%; padding: 2px; margin-right: 50px; width: 80px; height: 80px;">
-              
-            </marquee>
-</a>-->
-	   </div>  
-
+   
+     
 
     </div>
   </div>
@@ -626,9 +525,7 @@
   </div>
   <!-- Footer1 -->
   <div class="footer">
-
-
-    <!-- <a href="index.html">Home</a>
+<!-- <a href="index.html">Home</a>
  	<a href="https://www.facebook.com/Bhai-Bandhu-Patrika-150293535826784">FaceBook</a>
         <a href="twitter.html">Teitter</a>
          <a href="YouTube.html">YouTube</a>
@@ -641,6 +538,121 @@
       Privacy & Policy @copyright issued 2021 Developed by Vaibhav Bhojak.</b>
 
   </div>
+  <script>
+    // window.onscroll = function() {myFunction()};
+    
+    // var navbar = document.getElementById("navbar");
+    // var sticky = navbar.offsetTop;
+    
+    // function myFunction() {
+    //   if (window.pageYOffset >= sticky) {
+    //     navbar.classList.add("sticky")
+    //   } else {
+    //     navbar.classList.remove("sticky");
+    //   }
+    // }
+    function addmember() {
+      if(
+        $('#membername').val()==''||
+        $('#city').val()==''
+      ) 
+      {
+        $('#membername').focus();
+        alert('please enter name');
+        $('#city').focus();
+        alert('please enter city');
+      } else {
+        $.ajax({
+              url: 'addbloodmember.php',
+              type: 'POST',
+              dataType: "json",
+              data: {
+
+                group: $('#group').val(),
+                bloodname: $('#bloodname').val(),
+                address: $('#address').val(),
+                city: $('#city').val(),
+                state: $('#state').val(),
+                country: $('#country').val(),
+                mobile: $('#mobile').val(),
+                email: $('#email').val(),
+                age: $('#age').val(),
+                sex: $('#sex').val(),
+                year: $('#year').val(),
+               // checkbox: $('#checkbox').val(),
+               bloodt: $('#bloodt').val(),
+               remark: $('#remark').val(),
+
+
+
+
+
+              }
+          }).done(function(data){
+            if(data.isSaved) {
+              $("#addedMsg")[0].innerText = 'Data saved successfully!!';
+              $("#addMember")[0].reset();        
+            }
+          });
+      }
+      
+    }
+    
+    function searchMember() {
+      $.ajax({
+            url: 'searchblood.php',
+            type: 'POST',
+            dataType: "json",
+            data: {
+              searchedgroup: $('#Serchgroup').val()
+             
+            }
+        }).done(function(data){
+          if(data.noDataFound) {
+            alert('No Data found!!');
+          } else {
+            // $("#result_table").children('tbody')[0].innerHTML = '';
+            var template = '';
+            for(var i = 0; i<data.length; i++) {
+              template += '<tr>';
+              template += '<td>' + data[i].bloodgroup + '</td>';
+              template += '<td>' + data[i].id + '</td>';
+              template += '<td>' + data[i].donorname + '</td>';
+              template += '<td>' + data[i].city + '</td>';
+              template += '<td>' + data[i].mobile + '</td>';
+
+              template += '</tr>';
+              $("#result_table")[0].innerHTML = '';
+              // $("#result_bloodgroup")[0].innerText += data[i].bloodgroup;
+              // $("#result_ID")[0].innerText += data[i].id;
+              // $("#result_donorname")[0].innerText += data[i].donorname;
+              // $("#result_city")[0].innerText += data[i].city;
+              //  $("#result_mobile")[0].innerText += data[i].mobile;
+            }
+            $("#result_table")[0].innerHTML += template;
+          }
+    
+        });
+    }
+    
+    function clearSpan() {
+      var txt = '';
+      $("#result_bloodgroup")[0].innerText = txt;
+      $("#result_ID")[0].innerText = txt;
+      $("#result_donorname")[0].innerText = txt;
+      $("#result_city")[0].innerText = txt;
+       $("#result_mobile")[0].innerText = txt;
+    }
+    
+    </script>
+    
+
+
+
+
+
+
+
 </body>
 
 </html>
