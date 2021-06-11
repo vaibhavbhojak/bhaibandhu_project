@@ -1,0 +1,469 @@
+/* CSS Document */
+body {
+  padding: 10px;
+}
+/* hindi*/
+
+/*top line      */
+.topnav2 {
+  border-radius: 100px;
+
+  background-color: tomato;
+  overflow: hidden;
+}
+.topnav2 a {
+  float: right;
+  background-color: tomato;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+.topnav2 a:hover {
+  background-color: #ddd;
+  color: white;
+}
+/*end top line  */
+
+/*start header  */
+.header {
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  border: rgb(240, 240, 113);
+  background: white;
+  color: red;
+}
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/*end header*/
+
+/*start menu  */
+.topnav3 {
+  border-radius: 100px;
+  background-color: tomato;
+  color: white;
+  font-size: 13.5px;
+}
+.dropbtn {
+  background-color: tomato;
+  color: black;
+  padding: 8px;
+  font-size: 25px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.dropbtn:hover {
+  background-color: transparent;
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  font-size: 25px;
+  color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: red;
+  padding: 2px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown1-content a:hover {
+  background-color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+}
+
+/*end*/
+/* row */
+
+/* Clear floats after the columns */
+.row:after {
+  border-radius: 10px;
+  background-color: crimson;
+  border-top: solid 5px;
+
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  border-radius: 40px;
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 73%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+/* .fakeimg {
+    border-radius: 10px; 
+    float: right;
+
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }*/
+
+/* Add a card effect for articles */
+.card {
+  border-radius: 10px;
+  border-top: solid rgb(255, 123, 0) 5px;
+
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/*end*/
+/*tableeeeeeeeeeeeeee*/
+.table {
+  padding: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.img1 {
+  width: 500px;
+  height: auto;
+}
+.img2 {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+th,
+td {
+  text-align: justify;
+  padding: 8px;
+}
+/* containerrrrr*/
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+div.a {
+  text-align: center;
+  text-align-last: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 260px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.ul {
+  color: green;
+}
+
+/*endddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
+
+/*botton headline scrollllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+.bottomnav {
+  border-radius: 100px;
+  background-color: whitesmoke;
+  border-top: solid rgb(255, 207, 167) 5px;
+  overflow: hidden;
+  padding: 1px;
+  /* background-color: whitesmoke;*/
+}
+.bottomnav a {
+  background-color: whitesmoke;
+  color: rgb(255, 0, 51);
+  padding: 5px;
+}
+/*enddddddddddddddddddddddddddddddddd*/
+
+/* dropdownnnnnnnnn*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Footer */
+.footer {
+  border-radius: 10px;
+
+  padding: 13px;
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  font: bold;
+  padding: 10px 10px;
+}
+
+.footer a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/*endddddddddddddddddddddddddddd*/
+
+/* navbarrrrr*/
+.navbar {
+  border-radius: 100px;
+  background-color: tomato;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  
+}
+/*endddd*/
+
+/*formmmmmm*/
+
+input[type="text"],
+select,
+textarea {
+  width: 400px;
+  padding: 15px;
+  border: 1px solid tomato;
+  color: red;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  font-size: 30px;
+}
+
+input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  width: 100%;
+  padding: 15px 0.2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+input[type="reset"] {
+  background-color: tomato;
+  color: white;
+  width: 100px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.col-26 {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.col-76 {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*endddd*/
+
+/*overlay2*/
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.6s;
+}
+
+.overlay2-content {
+  position: relative;
+  padding-left: 60px;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.overlay2 a:hover,
+.overlay2 a:focus {
+  color: red;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 75px;
+  font-size: 55px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay2 a {
+    font-size: 20px;
+  }
+  .overlay2 .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*enddd*/
+/*dropdown2*/
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/*enddddd*/
+
+
