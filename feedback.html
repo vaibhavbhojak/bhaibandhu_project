@@ -11,7 +11,17 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.js"></script>
-  
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="https://jqueryvalidation.org/files/lib/jquery-1.11.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 
 
 
@@ -457,7 +467,7 @@ margin-bottom: -16px; ">
         style="height: auto;display: flex;padding: 10px;background-color:#f5f4f4; margin-top: 10px;">
        
 
-        <form method="post" id="Users" >
+        <form method="post" id="myform" >
           <table  width="100%" >
             <tr>
               <th colspan=4>
@@ -468,16 +478,21 @@ margin-bottom: -16px; ">
               <th align=left>Name:</th>
               <th align=left colspan=3>Email Address:</th>
             <tr>
-              <td class="form-group"><input name="DealerUsername" SIZE="22" MAXLENGTH="30"></td>
-              <!-- <td colspan=3><input name="Email" SIZE="26" MAXLENGTH="30"></td>
-              </tr> -->
-            <!-- <tr>
+              <td class="form-group">
+                <input name="name" SIZE="22" MAXLENGTH="30">
+              </td>
+              <td colspan=3>
+                <input name="email" SIZE="26" MAXLENGTH="30"></td>
+              </tr>
+            <tr>
               <th align=left colspan=2>Mobile Number :</th>
               <th align=left colspan=2>Phone Number :</th>
             </tr>
             <tr>
-              <td colspan=2><input name="Telephone" SIZE="26" MAXLENGTH="30"></td>
-              <td colspan=2><input name="Fax" SIZE="26" MAXLENGTH="30"></td>
+              <td colspan=2>
+                <input name="mobile" SIZE="26" MAXLENGTH="30"></td>
+              <td colspan=2>
+                <input name="phone" SIZE="26" MAXLENGTH="30"></td>
             <tr>
               <td colspan=4>&nbsp;</td>
             </tr>
@@ -486,32 +501,33 @@ margin-bottom: -16px; ">
               <th align=left colspan=1>Post Code / Zip:</th>
             </tr>
             <tr>
-              <td colspan=3><textarea rows="4" name="PostalAddress" cols="42"></textarea></td>
+              <td colspan=3>
+                <textarea rows="4" name="PostalAddress" cols="42"></textarea></td>
               <td colspan=1 valign=top>
-                <input name="PostCode" id="id1" SIZE="7" MAXLENGTH="10"></td>
+                <input name="PostCode" SIZE="7" MAXLENGTH="10"></td>
           
             <tr>
               <th align=left>Comments:</th>
             </tr>
             <tr>
               <td><textarea rows="14" name="Comments" cols="45"></textarea></td>
-            </tr> -->
+            </tr>
           
           
         
             <tr>
               <td align=right>
-                <button type="button" onclick="ValidateIt()">
+                <button type="button" onclick="myfun()">
                   <b>Submit</b>
                 </button>
               </td>
               <td>
                 <input name="reset" TYPE="reset" Value="Clear">
-                <p id="demo"></p>
+                
               </td>
             </tr>
           </table>
-          <div id="messages">asdf</div>
+         
         </form>
 
       
@@ -540,111 +556,60 @@ margin-bottom: -16px; ">
       Privacy & Policy @copyright issued 2021 Developed by Vaibhav Bhojak.</b>
 
   </div>
-  <script>
-  function sentmail() {
-   
-      $.ajax({
-            url: 'sentmail.php',
-            type: 'POST',
-            dataType: "json",
-            data: {
   
+ <script>
+        function myfun() {
+            $('#myform').valid();
+        }
+        $(document).ready(function () {
 
+            $('#myform').validate({ // initialize the plugin
+                rules: {
+                  name: {
+                    required: true,
 
-
-
-            }
-        }).done(function(data){
-          
-        });
-    }
-    
-function ValidateIt() {
-  $('#Users').validate({
-    rules: {
-                        DealerUsername: "required",
-
+                  },
+                  email: {
+                        required: true,
+                        email: true
                     },
-
-  });
-
-
-
-
-
-
-  // var validator = $('#Users').bootstrapValidator('validate');
-  // if(true){}
-    
-    //         email: {
-    //             message: "Email address is required",
-    //             validators: {
-    //                 notEmpty: {
-    //                     message: "Please provide Email address"
-    //                 },
-    //                 emailAddress: {
-    //                     message: "Email address was invalid"
-    //                 }
-    //             }
-    //         },
-    //         password: {
-    //             validators: {
-    //                 notEmpty: {
-    //                     message: "Password is required"
-    //                 },
-    //                 stringLength: {
-    //                     min: 6,
-    //                     message: "Password must be at least 6 characters long"
-    //                 },
-    //                 different: {
-    //                     field: "email",
-    //                     message: "Email and Password cannot match"
-    //                 }
-    //             }
-    //         },
-    //         confirmPassword: {
-    //             validators: {
-    //                 notEmpty: {
-    //                     message: "Confirm Password is required"
-    //                 },
-    //                 identical: {
-    //                     field: "password",
-    //                     message: "Password and Confirmation Password must match"
-    //                 }
-    //             }
-    //         },
-    //         department: {
-    //             validators: {
-    //                 notEmpty: {
-    //                     message: "Department is Required"
-    //                 }
-    //             }
-    //         }
-    //     }
-    // });
-
-}
+                    mobile: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 11
+                    },
+                    // phone: {
+                    //     required: true,
+                    //     minlength: 10,
+                    //     maxlength: 11
+                    // },
+                    PostalAddress: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 100 
+                    },
+                    Comments: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10000 
+                    },
+                    PostCode : {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 6 
+                    }
 
 
-function myFunction() {
-  var inpObj = document.getElementById("id1");
-  if (!inpObj.checkValidity()) {
-    document.getElementById("demo").innerHTML = inpObj.validationMessage;
-  } else {
-    document.getElementById("demo").innerHTML = "Input OK";
-  } 
 
-  if(validator === true) {
-      sentmail();
-    }
-
-
-} 
+                }
+            });
+        
+        });
+    </script> 
 
 
 
 
-</script>
 
 
 
